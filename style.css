@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "raleway"
+}
+.container{
+    max-width: 80rem;
+    height: 100vh;
+    margin: 0 auto;
+
+}
+.bg{
+    background-image: url(./assets/dragon-scales.svg);
+    display: block;
+    background-size: contain;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding-top: 20px;
+}
+
+.logo img{
+    width: 120px;
+}
+
+.list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 30px;
+    margin-right: 100px;
+}
+
+.navButton{
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+}
+
+.header-hero{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+.header-hero .left{
+    width: 50%;
+}
+.header-hero .right {
+    width: 50%
+}
+.header-hero .left h1{
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+.mid-hero{
+    max-width: 71rem;
+    display: flex;
+    padding: 0 50px;
+    margin: 0 auto;
+    align-items: center;
+
+}
+.mid-hero-img{
+    width: 50%;
+}
+.mid-hero-right{
+    width: 40%;
+}
+.mid-hero-right ul{
+    padding: 10px 50px;
+}
+.mid-hero-right ul li{
+    padding: 10px 10px;
+    line-height: 1.5;
+}
+
+
+.bottom-hero{
+    max-width: 71rem;
+    padding: 0 50px;
+    margin: 0 auto;
+ 
+}
+.bottom-hero-heading{
+    text-align: center;
+}
+.cards{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    /* flex-wrap: wrap; */
+
+
+}
+.card{
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card img{
+    width: 100px;
+}
+.card div{
+    text-align: center;
+    background-color: rgb(122, 122, 198);
+    border-radius: 12px 12px 0 0;
+}
+
+
+@media screen and (max-width:768px){
+    .list{
+        display: none;
+    }
+    .header-hero{
+        flex-direction: column-reverse;
+    }
+.mid-hero{
+    flex-direction: column;
+}
+.mid-hero-right {
+    width: 100%;
+}
+.cards{
+    flex-wrap: wrap;
+
+}
+
+}
