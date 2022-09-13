@@ -7,7 +7,6 @@
 }
 .container {
   max-width: 80rem;
-  height: 100vh;
   margin: 0 auto;
 }
 .bg {
@@ -109,29 +108,51 @@
 .cards {
   display: flex;
   margin-top: 20px;
+  margin-bottom: 20px;
   justify-content: space-between;
   gap: 20px;
   align-items: center;
-  /* flex-wrap: wrap; */
 }
 .card {
   max-width: 250px;
   margin: 0 auto;
-  padding: 10px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 20px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  overflow: hidden;
 }
 
 .card img {
   width: 100px;
 }
-.card div {
+.card .description {
   text-align: center;
-  background-color: rgb(122, 122, 198);
   border-radius: 12px 12px 0 0;
+}
+.card .description p {
+  padding: 4px 8px;
+  font-size: 14px;
+}
+.card:first-child .description {
+  background-color: rgb(122, 122, 198);
+}
+
+.card .icon {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(245, 56, 6, 0.2);
+  margin: 40px auto 30px auto;
+  border-radius: 500px;
+}
+.card .icon img {
+  width: 50px;
+  display: inline-block;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -140,6 +161,9 @@
   }
   .header-hero {
     flex-direction: column-reverse;
+  }
+  .header-hero .left h1 {
+    font-size: 2rem;
   }
   .mid-hero {
     flex-direction: column;
